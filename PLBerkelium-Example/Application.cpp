@@ -31,7 +31,7 @@ Application::Application(Frontend &cFrontend) : EngineApplication(cFrontend),
 
 Application::~Application()
 {
-	Berkelium::destroy(); // required
+	if (m_pGui) Berkelium::destroy(); // required
 }
 
 
@@ -65,7 +65,7 @@ void Application::OnStop()
 {
 	EngineApplication::OnStop();
 
-	m_pGui->DestroyInstance(); // required
+	if (m_pGui) m_pGui->DestroyInstance(); // required
 }
 
 
