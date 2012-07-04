@@ -22,7 +22,7 @@
 #include <PLInput/Input/Devices/Device.h>
 #include <PLInput/Input/InputManager.h>
 
-#include <PLBerkelium/SRPWindows.h>
+#include <PLBerkelium/SRPWindow.h>
 #include <PLBerkelium/Gui.h>
 
 
